@@ -24,7 +24,9 @@ export default function Nav() {
     <header className={`site-nav ${scrolled ? 'scrolled' : ''} ${open ? 'menu-open' : ''}`}>
       <div className="wrap">
         <a href="#home" className="brand">
-          <span className="brand-mark">SHA</span>
+          <span className="brand-mark">
+            <img src="/images/logo.png" alt="Art by SHA logo" width="38" height="38" />
+          </span>
           <span className="brand-word">Art by SHA</span>
         </a>
 
