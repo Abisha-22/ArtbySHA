@@ -83,6 +83,7 @@ export default function Contact() {
           <p className="loc">Based in India — Shipping available</p>
           <div className="social">
             <a
+              className="instagram"
               href="https://www.instagram.com/_.art._.sy._?utm_source=qr&igsh=eWtyMHNvcXB1d2dp"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,6 +91,7 @@ export default function Contact() {
               Instagram
             </a>
             <a
+              className="pinterest"
               href="http://www.artbysha.com"
               target="_blank"
               rel="noopener noreferrer"

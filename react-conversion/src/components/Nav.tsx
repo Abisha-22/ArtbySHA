@@ -21,12 +21,18 @@ export default function Nav() {
   const closeMenu = () => setOpen(false);
 
   return (
-    <header className={`site-nav ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`site-nav ${scrolled ? 'scrolled' : ''} ${open ? 'menu-open' : ''}`}>
       <div className="wrap">
         <a href="#home" className="brand">
           <span className="brand-mark">SHA</span>
           <span className="brand-word">Art by SHA</span>
         </a>
+
+        <div
+          className={`nav-backdrop ${open ? 'open' : ''}`}
+          onClick={closeMenu}
+          aria-hidden="true"
+        />
 
         <nav className={`links ${open ? 'open' : ''}`}>
           {LINKS.map((l) => (
